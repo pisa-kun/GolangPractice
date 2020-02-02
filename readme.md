@@ -38,6 +38,7 @@ func main(){
 ちなみに、**.exe(実行ファイル)**を作成したい場合はコマンドラインで以下コマンド実行
 
 > go build hello.go
+
 > hello.exe
 
 ## Usage
@@ -53,21 +54,21 @@ import "fmt"
 
 func main() {
 
-	FizzBuzz(1)
-	FizzBuzz(3)
-	FizzBuzz(5)
-	FizzBuzz(9)
-	FizzBuzz(10)
-	FizzBuzz(13)
-	FizzBuzz(15)
-	FizzBuzz(30)
-	FizzBuzz(50)
-	FizzBuzz(100)
-	FizzBuzz(101)
+	fizzBuzz(1)
+	fizzBuzz(3)
+	fizzBuzz(5)
+	fizzBuzz(9)
+	fizzBuzz(10)
+	fizzBuzz(13)
+	fizzBuzz(15)
+	fizzBuzz(30)
+	fizzBuzz(50)
+	fizzBuzz(100)
+	fizzBuzz(101)
 }
 
 // int型の引数を一つ受け取るメソッド
-func FizzBuzz(input int) {
+func fizzBuzz(input int) {
 	if input%15 == 0 {
 		fmt.Println("入力値", input, " は「15」の倍数(Fizz Buzz)です")
 	} else if input%3 == 0 {
@@ -80,18 +81,18 @@ func FizzBuzz(input int) {
 }
 
 ```
->PS C:\Develop\Go\HelloWorld> go run .\fizzbuzz.go
-入力値 1  は「3,5,15」の倍数ではありません
-入力値 3  は「3」の倍数(Fizz)です
-入力値 5  は「5」の倍数(Buzz)です
-入力値 9  は「3」の倍数(Fizz)です
-入力値 10  は「5」の倍数(Buzz)です
-入力値 13  は「3,5,15」の倍数ではありません
-入力値 15  は「15」の倍数(Fizz Buzz)です
-入力値 30  は「15」の倍数(Fizz Buzz)です
-入力値 50  は「5」の倍数(Buzz)です
-入力値 100  は「5」の倍数(Buzz)です
-入力値 101  は「3,5,15」の倍数ではありません
+>PS C:\Develop\Go\HelloWorld> go run .\fizzbuzz.go  
+入力値 1  は「3,5,15」の倍数ではありません  
+入力値 3  は「3」の倍数(Fizz)です  
+入力値 5  は「5」の倍数(Buzz)です  
+入力値 9  は「3」の倍数(Fizz)です  
+入力値 10  は「5」の倍数(Buzz)です  
+入力値 13  は「3,5,15」の倍数ではありません  
+入力値 15  は「15」の倍数(Fizz Buzz)です  
+入力値 30  は「15」の倍数(Fizz Buzz)です  
+入力値 50  は「5」の倍数(Buzz)です  
+入力値 100  は「5」の倍数(Buzz)です  
+入力値 101  は「3,5,15」の倍数ではありません  
 
 ## Orgnization
 
@@ -117,7 +118,10 @@ func FizzBuzz(input int) {
     - 型変換
 
 - Chapter6 : 配列、スライス、マップ
-
+    - 配列
+    - スライス
+    - make()
+    - マップ
 
 - Chapter7 : エラーハンドリング
 
